@@ -25,7 +25,7 @@ Hence you must make sure that the path or the filename is unique enough.
 
 ## Run on QEMU
 
-You must first create a copy of your local firmware files (`OVMF_VARS.fd` & `OVMF_CODE.fd`) to the root of the project directory. Mine were located at `/usr/share/edk2/x64`.
+You must first create a copy of your local firmware files (`OVMF_VARS.fd` and `OVMF_CODE.fd`) to the root of the project directory. Mine were located at `/usr/share/edk2/x64`.
 
 Then the `Makefile` will do the rest of the job for you.
 

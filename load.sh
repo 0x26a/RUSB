@@ -3,5 +3,5 @@ sudo rm -rf /mnt/efi
 sudo mkdir /mnt/efi
 sudo mkdir /mnt/efi/boot
 sudo cp esp/efi/boot/bootx64.efi /mnt/efi/boot/bootx64.efi
-sudo cp esp/efi/boot/rust.rgb /mnt/efi/boot/rust.rgb
+sudo cp esp/efi/boot/picture.rgb /mnt/efi/boot/picture.rgb
 sudo umount /dev/your_efi_partition

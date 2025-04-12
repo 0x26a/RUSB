@@ -23,6 +23,6 @@ fn main() -> Status {
         rusb.draw_image();
         rusb.show_system_details();
         rusb.boot_efi();
-    return rusb.press_key_exit();
+        return rusb.press_key_exit();
     }
 }

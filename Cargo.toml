@@ -1,0 +1,21 @@
+[package]
+name = "uefi-grub-preloader"
+version = "0.1.0"
+edition = "2024"
+
+[profile.dev]
+panic ="abort"
+
+[profile.release]
+panic ="abort"
+
+[profile.test]
+panic ="abort"
+
+[dependencies]
+embedded-graphics = "0.8.1"
+embedded-graphics-core = "0.4.0"
+log = "0.4.27"
+uefi = { version = "0.34.1", features = ["logger", "panic_handler"] }
+uefi-graphics2 = "0.4.5"
+uefi-raw = "0.10.0"

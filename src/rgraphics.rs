@@ -2,6 +2,7 @@ use crate::rcore;
 use crate::rhandler::{RusbError::*, GRAPHICS_OUTPUT, SIMPLE_FS};
 use crate::uefi_alloc;
 use crate::rconfig::{PICTURE_SIZE,PICTURE_PATH,PICTURE_WIDTH};
+use alloc::vec::Vec;
 use core::alloc::GlobalAlloc;
 use core::alloc::Layout;
 use uefi::{guid, Guid};

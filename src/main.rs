@@ -7,20 +7,8 @@ mod rhandler;
 mod rgraphics;
 mod uefi_alloc;
 
-use rhandler::{RusbError::*, SIMPLE_FS, DEVICE_PATH, GRAPHICS_OUTPUT};
-use log::info;
-use core::ffi::c_void;
-use core::mem::size_of;
-use uefi::boot::*;
-use uefi::Identify;
-use uefi::prelude::*;
-use uefi::{guid, Guid};
-use uefi::proto::media::file::File;
-use uefi::proto::device_path::DevicePath;
-use uefi::proto::media::fs::SimpleFileSystem;
-use uefi_raw::table::system::SystemTable;
-use uefi_raw::table::configuration::ConfigurationTable;
-use uefi_raw::protocol::loaded_image::LoadedImageProtocol;
+use uefi::entry;
+use uefi::Status;
 use embedded_graphics::mono_font::ascii;
 
 #[macro_use]

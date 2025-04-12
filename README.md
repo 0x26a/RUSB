@@ -15,6 +15,14 @@ Then I just put the generated EFI program and ask for the computer to boot on th
 ## Warnings
 This code was written for learning purpose and may (SAFELY !) crash on some hardware.
 
+## Config
+
+In the `src/rconfig.rs` file you can enter the path of the EFI program you wish to launch at startup.
+
+Note that no target disk is actually specified, the program is looking for any volume that contains the path.
+
+Hence you must make sure that the path or the filename is unique enough.
+
 ## Run on QEMU
 
 You must first create a copy of your local firmware files (`OVMF_VARS.fd` & `OVMF_CODE.fd`) to the root of the project directory. Mine were located at `/usr/share/edk2/x64`.

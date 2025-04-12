@@ -34,7 +34,6 @@ impl rcore::Rusb<'_>{
                 self.write(&format!("loaded EFI image {}", EFI_APP_PATH));
                 self.write(&format!("starting loaded image in 3s"));
                 boot::stall(3_000_000);
-                loop{}
                 match start_image(loaded_image_handle){
                     Err(e) => self.handle(StartError(e)),
                     _ => ()
